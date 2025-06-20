@@ -1,0 +1,17 @@
+# --- core ---
+aiogram==2.25.2          # Telegram-бот (v2 API, нужен executor)
+torch                    # PyTorch CPU-билд
+torchvision
+torchaudio               # пусть будет, если захотите работать со звуком
+
+# --- CV / ML ---
+numpy>=1.25
+Pillow>=10.0             # модуль PIL
+rembg>=2.0               # удаление фона
+
+# Mac Intel  → onnxruntime
+# Mac M-чип → onnxruntime-silicon
+onnxruntime             # замените на onnxruntime-silicon при arm64
+
+# --- утилиты ---
+tqdm                     # прогресс-бары (необяз., но удобно)
